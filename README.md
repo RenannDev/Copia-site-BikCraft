@@ -3,7 +3,7 @@
 
 ## 🎯 Objetivo do Projeto
 
-O principal objetivo deste projeto é replicar o site original utilizando HTML, SCSS e técnicas de UI Design, para eu aprimorar minhas habilidades de front-end e boas práticas de desenvolvimento web.
+O principal objetivo deste projeto é replicar o site original utilizando HTML, SCSS e técnicas de UI Design, para aprimorar minhas habilidades de front-end e boas práticas de desenvolvimento web.
 
 ## 🛠️ Tecnologias Utilizadas
 
