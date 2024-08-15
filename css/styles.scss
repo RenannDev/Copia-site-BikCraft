@@ -1,0 +1,238 @@
+*,
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Font primaria: 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Font Segundária:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+$corPrimaria:#ffbb00 ;
+$corSegundaria: #000;
+$corTerciaria: white;
+$fontPrimaria: "Poppins", sans-serif;
+$fontSegundaria:"Roboto", sans-serif;
+
+
+#cabecalho {
+    background-color: $corSegundaria;
+    width: 100%;
+    height: 10rem; /* Ajuste a altura conforme necessário */
+
+    #nav-bar {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente todos os itens */
+        justify-content: space-between;
+        padding: 0 3rem; /* Padding horizontal */
+        height: 100%; /* Garante que o nav-bar ocupe toda a altura do cabeçalho */
+    }
+
+    // Logotipo 
+    #nav-bar .logo {
+        min-width: 230px;
+        height: auto;
+        display: block;
+        margin-top: -1rem;
+    }
+
+    // Textos do menu
+    #nav-bar ul {
+        list-style: none;
+        color: $corTerciaria;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center; /* Centraliza verticalmente os itens do menu */
+    }
+
+    #nav-bar ul li {
+
+        padding-inline-start: 4.5rem;
+        font-size: 1.8rem;
+        font-family: $fontPrimaria;
+    }
+
+    // Efeito de hover
+    #nav-bar ul li a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding-bottom: 5px;
+    }
+
+    #nav-bar ul li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 4px;
+        background-color: gray;
+        transition: width 0.3s ease-out;
+    }
+
+    #nav-bar ul li a:hover::after {
+        width: 100%;
+    }
+}
+
+
+#introducao{
+    background-color: $corSegundaria;
+    margin: 0;
+    padding:0 3rem ;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+
+
+    .conteudo-topo
+    {
+        display: flex;
+        background-color: $corSegundaria;
+        color: white;
+        flex-direction: column;
+        margin-top: 4.5rem;
+    }
+
+    .conteudo-topo h1{
+        font-family: $fontPrimaria;
+        font-weight: 600;
+        font-size: 7rem ;
+        line-height: 6rem;
+    }
+
+    .conteudo-topo h1 > span{
+        color: $corPrimaria;
+    
+    }
+
+    .conteudo-topo p {
+        color: rgb(165, 163, 163);
+        font-size: 3rem;
+        font-family: $fontSegundaria;
+        text-align: left;
+        margin-top: 3rem;
+        padding-inline-end: 2rem ;
+    }
+
+    .container-top{
+        display: inline-block;
+        margin: 0 0 0 3rem;
+    }
+
+    .conteudo-topo button{
+        margin: 4rem 0 ;
+        max-width: 22rem;
+        height: 6rem;
+        background-color: $corPrimaria;
+        border-radius: 5px;
+        font-size: 2rem;
+        font-family: $fontSegundaria;
+        font-weight: bold;
+        color: #332200;
+    }
+
+    div > .banner{
+        max-width: 800px;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: -12rem;
+    }
+}
+
+.section-de-product{
+    margin: 22rem  0 0 0;
+
+    h2 {
+        font-weight: 600;
+        font-family: $fontPrimaria;
+        font-size: 5rem;
+        margin: 0 0 4rem 2.9rem;
+    }
+
+    h2 > span{
+        color: $corPrimaria;
+    }
+
+    .div-list-product{
+        margin-inline: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-list{
+        overflow-x: auto;
+        display: flex;
+        gap: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .product-list .product-item a{
+        text-decoration: none;
+    }
+
+    .product-item {
+        border-radius: 8px;
+        text-align: left;
+        padding: 0 20px;
+        // width: 500px;
+        position: relative;
+    }
+
+    .product-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .product-item h3{
+        font-family: $fontSegundaria;
+        font-weight: 600;
+        font-size: 3rem;
+        color: $corSegundaria;
+        margin: 10px 0;
+        display: flex;
+        justify-content: start;
+        position: relative;
+    }
+
+    .product-item h3, p {
+        display: block;
+        padding-left:36px ;
+    
+    }
+
+    .product-item h3::before {
+        content: '';
+        width: 30px;
+        height: 14px;
+        background-color: $corPrimaria;
+        margin-right: 10px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .product-item p{
+        font-size: 2rem;
+        color: gray;
+        margin: 5px 0;
+    }
+
+
+}
+
