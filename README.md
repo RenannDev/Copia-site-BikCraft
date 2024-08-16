@@ -1,5 +1,5 @@
-# Copia do site bikcraft
- Este repositório contém uma cópia fiel do site Bikcraft, um projeto desenvolvido pela Origamid. O projeto é focado na construção de um site de bicicletas personalizadas, trazendo design moderno, interface de usuário intuitiva e responsiva, com foco na experiência do usuário.
+# Web site bikcraft
+ Este repositório contém um clone fiel do site Bikcraft, um projeto desenvolvido pela Origamid. O projeto é focado na construção de um site de bicicletas personalizadas, trazendo design moderno, interface de usuário intuitiva e responsiva, com foco na experiência do usuário.
 
 ## 🎯 Objetivo do Projeto
 
@@ -26,8 +26,8 @@ O principal objetivo deste projeto é replicar o site original utilizando HTML, 
 
 ## 🌟 Inspiração
 
-Este projeto é inspirado no site desenvolvido pela Origamid, uma plataforma educacional que oferece cursos de web design e desenvolvimento. O objetivo é aprimorar as habilidades de front-end, seguindo boas práticas e padrões de mercado.
+Este projeto é inspirado no site desenvolvido pela Origamid, uma plataforma educacional que oferece cursos de web design e desenvolvimento. O objetivo é aprimorar minhas habilidades de front-end, seguindo boas práticas e padrões de mercado.
 
 
 # 📝 Licença
-Este projeto é uma cópia para fins educacionais e não possui fins lucrativos. Todos os direitos de design e conteúdo pertencem à Origamid.
+Este projeto é uma clone para fins educacionais e não possui fins lucrativos. Todos os direitos e conteúdo pertencem à Origamid.
