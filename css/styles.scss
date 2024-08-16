@@ -236,3 +236,61 @@ $fontSegundaria:"Roboto", sans-serif;
 
 }
 
+
+
+/*Seção do FOOTER*/
+
+footer{
+    background-color: $corSegundaria;
+    margin: 4rem 0 0 0;
+    padding: 4rem;
+    width: 100%;
+
+
+    #secao-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px, auto ;
+        gap: 3rem;
+    }
+
+    #secao-footer{
+        color: gray;
+        text-align: start;
+    }
+
+    div h4{
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+    }
+
+    div ul li{
+        list-style: none;
+        padding-block: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .f-contato .list-contato{
+        border-bottom: 1px solid gray;
+        padding-bottom: 1rem;
+    }
+
+    .redes-socias{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 0.25fr);
+    }
+
+    .redes-socias a:hover{
+        transform: scale(1.2);
+        
+    }
+
+    // Ultimo elemento do Footer
+
+    .direitos-autorais p{
+        color: gray;
+        font-size: 1.2rem;
+        padding: 6rem 0 1rem 0;
+    }
+}
